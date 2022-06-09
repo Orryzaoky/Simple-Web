@@ -8,8 +8,8 @@
 
 (defroutes app-routes
   (GET "/" [] (view/index file/txt))
-  (POST "/" [note] 
-      (do (file/add note)
+  (POST "/" [gloss] 
+      (do (file/add gloss)
           (response/redirect "/")))
   (route/not-found "Not Found"))
 
