@@ -22,5 +22,5 @@
 
 (defn index [notes]
   (page
-    (for [gloss @notes]
-      [:p gloss])))
+    (for [note @notes]
+      [:p note])))
